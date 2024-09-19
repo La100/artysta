@@ -30,6 +30,16 @@ export default function Navlinks({ user }: NavlinksProps) {
               Account
             </Link>
           )}
+           {user && (
+            <Link href="/panel" className={s.link}>
+              Panel
+            </Link>
+          )}
+            {user && (
+            <Link href="/panel/models/train" className={s.link}>
+              New model
+            </Link>
+          )}
         </nav>
       </div>
       <div className="flex justify-end space-x-8">
